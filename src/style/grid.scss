@@ -1,0 +1,21 @@
+@use 'responsive';
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include responsive.medium-device {
+
+  }
+  @include responsive.large-device {
+
+  }
+  @include responsive.extra-large-device {
+
+  }
+  @include responsive.xx-large-device {
+    max-width: 1400px;
+  }
+}

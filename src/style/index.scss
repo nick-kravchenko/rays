@@ -1,0 +1,18 @@
+@use 'reset';
+@use 'responsive';
+@use 'grid';
+
+* {
+  box-sizing: border-box;
+}
+canvas {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  image-rendering: pixelated;
+}
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+}

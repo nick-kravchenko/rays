@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es2022",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}
