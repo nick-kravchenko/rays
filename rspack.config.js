@@ -26,7 +26,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.(j|t)s$/,
+        test: /\.([jt])s$/,
         exclude: /node_modules/,
         loader: 'builtin:swc-loader',
         options: {

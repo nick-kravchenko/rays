@@ -15,7 +15,7 @@ type Star = [
 ];
 
 const pointRadius = 4;
-let depth = 1;
+const depth = 1;
 let rayCount = 8;
 
 function clamp(value: number, min: number, max: number): number {
@@ -48,7 +48,7 @@ function lineToLineCollisionPoint(intersectLine: Line, intersectedLine: Line): P
 }
 
 function getStarFromPoint(point: Point, segments: number, obstaclesLines: Line[] = [], endPoint?: Point): Star {
-  const threshold = pointRadius;
+  // const threshold = pointRadius;
   let starAngle = 0;
   const points: Point[] = [];
   const [centerX, centerY] = point;
@@ -89,7 +89,7 @@ function getStarFromPoint(point: Point, segments: number, obstaclesLines: Line[]
 }
 
 function expandStars(starsToExpand: Star[], depth: number, obstaclesLines: Line[] = [], endPoint?: Point): Star[] {
-  let endStars: Star[] = [...starsToExpand];
+  const endStars: Star[] = [...starsToExpand];
 
   while (depth > 0) {
     const expandedStars: Star[] = [];
